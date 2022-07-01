@@ -1,0 +1,176 @@
+body {
+  margin: 0px;
+}
+
+.header {
+  text-align: center;
+  font-family: "Shrikhand";
+  margin-bottom: 6px;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  background-color: #EFEFEF;
+  box-shadow: inset 0px 5px #DCDCDC;
+}
+.location .location__pic {
+  max-width: 12px;
+  padding-right: 10px;
+}
+.location .location__city {
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
+.presentation {
+  text-align: center;
+  background-color: #F5F5F5;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-family: "Roboto";
+}
+.presentation .presentation__btn {
+  border-radius: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+  color: white;
+  font-size: small;
+  background-color: #FF79DA;
+  box-shadow: 2px 5px 5px grey;
+  text-decoration: none;
+}
+
+.rule {
+  font-family: "Roboto";
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+.rule .rule__ul {
+  list-style-type: none;
+  padding-left: 4px;
+  padding-right: 8px;
+}
+.rule .rule__li {
+  background-color: #F5F5F5;
+  box-shadow: 2px 5px 5px grey;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+.rule .rule__lipink {
+  background-color: #fbe0f3;
+  box-shadow: 2px 5px 5px grey;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+.rule .rule__num {
+  max-width: 6px;
+  padding: 8px;
+  margin-right: 20px;
+  margin-left: -9px;
+  border-radius: 50%;
+  background-color: #9356DC;
+}
+.rule .rule__pic {
+  max-width: 18px;
+  padding-right: 20px;
+}
+
+.food {
+  background-color: #F5F5F5;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 1px;
+}
+.food .food__bigtitle {
+  padding-top: 40px;
+}
+.food a {
+  text-decoration: none;
+  color: black;
+}
+.food a:hover {
+  text-decoration: none;
+  color: gray;
+}
+.food .food__card {
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  box-shadow: 2px 5px 5px grey;
+}
+.food .food__img__cont {
+  position: relative;
+}
+.food .food__pic {
+  width: 100%;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.food .food__badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.food .food__content {
+  display: flex;
+  justify-content: space-between;
+}
+.food .food__content .food__title {
+  margin-top: 12px;
+  margin-bottom: 0px;
+  margin-left: 12px;
+}
+.food .food__content .food__heart {
+  max-width: 18px;
+  padding-right: 10px;
+  justify-content: end;
+}
+.food .food__para {
+  margin-left: 12px;
+  margin-top: 6px;
+  padding-bottom: 16px;
+}
+
+.footer {
+  background-color: gray;
+  padding-bottom: 1px;
+}
+.footer .footer__title {
+  font-family: "Shrikhand";
+  color: white;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.footer .footer__ul {
+  list-style-type: none;
+  padding-left: 20px;
+  margin-top: 12px;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer a:hover {
+  background-color: none;
+}
+.footer .footer__li {
+  color: white;
+  padding-bottom: 6px;
+}
+.footer .footer__pic {
+  width: 12px;
+  padding-right: 5px;
+}/*# sourceMappingURL=projet3.css.map */
