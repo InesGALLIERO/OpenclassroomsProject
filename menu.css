@@ -1,0 +1,336 @@
+@charset "UTF-8";
+@-webkit-keyframes progre_disp {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes progre_disp {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.le-delice-des-sens {
+  margin: 0px;
+  background-image: url(./louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.la-note-enchantee {
+  margin: 0px;
+  background-image: url(./stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.a-la-française {
+  margin: 0px;
+  background-image: url(./toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.la-palette-du-gout {
+  margin: 0px;
+  background-image: url(./jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.header {
+  position: relative;
+  background-color: #f5f5f5;
+}
+.header .header__pic {
+  width: 14px;
+  bottom: 17px;
+  left: 20px;
+  position: absolute;
+}
+.header .header__title {
+  text-align: center;
+  font-family: "Shrikhand";
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.menu {
+  background-color: #f5f5f5;
+  padding-bottom: 1px;
+  margin-top: 154px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.menu .menu__title {
+  position: relative;
+  margin: 10px;
+}
+.menu .menu__title__h2 {
+  font-family: "Shrikhand";
+  padding-bottom: 14px;
+  padding-top: 30px;
+}
+.menu .menu__title .heart {
+  position: relative;
+  background-color: white;
+  border-radius: 0px 0px 20px 20px;
+  cursor: pointer;
+  bottom: 13px;
+}
+.menu .menu__title .heart::before {
+  display: inline-block;
+  font-size: 1.5rem;
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  right: 1rem;
+  bottom: 25px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 1;
+  transition: all 300ms ease-in-out;
+}
+.menu .menu__title .heart::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "\f004";
+  font-size: 1.5rem;
+  right: 1rem;
+  bottom: 25px;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  background-image: linear-gradient(to top, rgb(147, 86, 255), rgb(255, 121, 218));
+  transition: all 300ms ease-in-out;
+}
+.menu .menu__title .heart:hover::after {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.menu .menu__food {
+  margin-left: 10px;
+  font-family: "Roboto";
+}
+.menu .menu__food__title {
+  margin-bottom: 5px;
+  padding-top: 10px;
+}
+.menu .menu__food__border {
+  border: solid 1px #99E2D0;
+  width: 40px;
+  margin-left: 1px;
+  margin-top: 5px;
+}
+.menu .menu__food a {
+  text-decoration: none;
+  color: black;
+}
+.menu .menu__food .delay_1 {
+  -webkit-animation-name: progre_disp;
+          animation-name: progre_disp;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+}
+.menu .menu__food .delay_2 {
+  -webkit-animation-name: progre_disp;
+          animation-name: progre_disp;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+.menu .menu__food .delay_3 {
+  -webkit-animation-name: progre_disp;
+          animation-name: progre_disp;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+.menu .menu__food .delay_4 {
+  -webkit-animation-name: progre_disp;
+          animation-name: progre_disp;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+}
+.menu .menu__food .delay_5 {
+  -webkit-animation-name: progre_disp;
+          animation-name: progre_disp;
+  -webkit-animation-duration: 14s;
+          animation-duration: 14s;
+}
+.menu .menu__food .delay_6 {
+  -webkit-animation-name: progre_disp;
+          animation-name: progre_disp;
+  -webkit-animation-duration: 16s;
+          animation-duration: 16s;
+}
+.menu .menu__food .delay_7 {
+  -webkit-animation-name: progre_disp;
+          animation-name: progre_disp;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+.menu .menu__food .delay_8 {
+  -webkit-animation-name: progre_disp;
+          animation-name: progre_disp;
+  -webkit-animation-duration: 22s;
+          animation-duration: 22s;
+}
+.menu .menu__food .delay_9 {
+  -webkit-animation-name: progre_disp;
+          animation-name: progre_disp;
+  -webkit-animation-duration: 24s;
+          animation-duration: 24s;
+}
+.menu .menu__food .delay_10 {
+  -webkit-animation-name: progre_disp;
+          animation-name: progre_disp;
+  -webkit-animation-duration: 26s;
+          animation-duration: 26s;
+}
+.menu .menu__food .menu__food__card {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  text-decoration: none;
+  background-color: white;
+  margin-top: 14px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 10px 2px #dcdcdc;
+  padding-left: 10px;
+}
+.menu .menu__food .menu__food__card__title {
+  margin-bottom: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menu .menu__food .menu__food__card .menu__food__card__descript {
+  display: flex;
+  align-items: baseline;
+}
+.menu .menu__food .menu__food__card .menu__food__card__descript__price {
+  padding-right: 10px;
+  font-weight: bold;
+}
+.menu .menu__food .menu__food__card .menu__food__card__descript__para {
+  margin-top: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 10px;
+}
+.menu .menu__food .menu__food__card .checkpic {
+  width: 40px;
+  padding: 26px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #99E2D0;
+  margin-right: -92px;
+}
+.menu .menu__food .menu__food__card:hover a {
+  margin-right: 0px;
+  transition-duration: 500ms;
+}
+.menu .menu__btn {
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.menu .menu__btn .menu__btn__a {
+  border-radius: 30px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  font-size: small;
+  background-color: #9356DC;
+  box-shadow: 9px 6px 12px #dcdcdc;
+  text-decoration: none;
+  font-family: "Roboto";
+}
+.menu .menu__btn a:hover {
+  background-color: #bb8ff0;
+  text-decoration: none;
+  box-shadow: 17px 7px 16px #dcdcdc;
+}
+
+.footer {
+  background-color: gray;
+  padding-bottom: 3px;
+}
+.footer .footer__title {
+  font-family: "Shrikhand";
+  color: white;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.footer .footer__ul {
+  list-style-type: none;
+  padding-left: 20px;
+  margin-top: 12px;
+}
+.footer li.footer__li a {
+  text-decoration: none;
+  color: white;
+}
+.footer li.footer__li a:hover {
+  background-color: gray;
+}
+.footer .footer__li {
+  color: white;
+  padding-bottom: 6px;
+}
+.footer .footer__pic {
+  width: 12px;
+  padding-right: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  .le-delice-des-sens {
+    background-size: 100% 50%;
+  }
+  .la-note-enchantee {
+    background-size: 100% 50%;
+  }
+  .a-la-française {
+    background-size: 100% 50%;
+  }
+  .la-palette-du-gout {
+    background-size: 100% 50%;
+  }
+  .div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .div .menu__food {
+    width: 30%;
+  }
+  .footer__ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}/*# sourceMappingURL=menu.css.map */

@@ -1,5 +1,89 @@
+@-webkit-keyframes rotat {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  66% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotat {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  66% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes opaci {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes opaci {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   margin: 0px;
+}
+
+.loader {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+.loader .loader__anim {
+  border: 16px solid #9356DC;
+  border-top: 16px solid #FF79DA;
+  border-bottom: 16px solid #99E2D0;
+  border-radius: 50%;
+  box-shadow: 7px 6px 11px #dcdcdc;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-name: rotat;
+          animation-name: rotat;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+}
+
+.page {
+  -webkit-animation-name: opaci;
+          animation-name: opaci;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+h2 {
+  font-family: "Roboto";
+  font-weight: bold;
 }
 
 .header {
@@ -12,105 +96,116 @@ body {
   display: flex;
   justify-content: center;
   background-color: #EFEFEF;
-  box-shadow: inset 0px 5px #DCDCDC;
+  box-shadow: 0px 5px 6px #DCDCDC inset;
+  font-family: "Roboto";
 }
-.location .location__pic {
+.location__pic {
   max-width: 12px;
   padding-right: 10px;
+  margin-right: 6px;
 }
-.location .location__city {
+.location__city {
   font-family: "Roboto";
   font-weight: bold;
+  font-size: small;
 }
 
-.presentation {
+.present {
   text-align: center;
   background-color: #F5F5F5;
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   font-family: "Roboto";
 }
-.presentation .presentation__btn {
+.present__para {
+  margin-bottom: 30px;
+}
+.present__btn {
   border-radius: 30px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-left: 60px;
-  margin-right: 60px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   color: white;
   font-size: small;
-  background-color: #FF79DA;
-  box-shadow: 2px 5px 5px grey;
+  background-color: #9356DC;
+  box-shadow: 9px 6px 12px #dcdcdc;
   text-decoration: none;
+}
+.present a:hover {
+  background-color: #bb8ff0;
+  box-shadow: 17px 7px 16px #dcdcdc;
 }
 
 .rule {
   font-family: "Roboto";
-  padding-left: 10px;
-  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
-.rule .rule__ul {
-  list-style-type: none;
+.rule__ul {
   padding-left: 4px;
   padding-right: 8px;
 }
-.rule .rule__li {
-  background-color: #F5F5F5;
-  box-shadow: 2px 5px 5px grey;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-weight: bold;
+.rule a {
+  text-decoration: none;
+  color: black;
 }
-.rule .rule__lipink {
-  background-color: #fbe0f3;
-  box-shadow: 2px 5px 5px grey;
-  border-radius: 10px;
+.rule a :hover {
+  background-color: #FF79DA;
+}
+.rule__li {
+  background-color: #F5F5F5;
+  box-shadow: 8px 8px 10px 2px #dcdcdc;
+  border-radius: 20px;
   margin-bottom: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   font-weight: bold;
+  position: relative;
+  font-size: small;
+  display: flex;
+  align-items: center;
 }
 .rule .rule__num {
   max-width: 6px;
   padding: 8px;
-  margin-right: 20px;
-  margin-left: -9px;
+  position: absolute;
+  top: 20px;
+  left: -9px;
   border-radius: 50%;
   background-color: #9356DC;
 }
 .rule .rule__pic {
   max-width: 18px;
   padding-right: 20px;
+  padding-left: 30px;
 }
 
 .food {
   background-color: #F5F5F5;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 1px;
-}
-.food .food__bigtitle {
-  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  font-family: "Roboto";
 }
 .food a {
   text-decoration: none;
   color: black;
 }
 .food a:hover {
-  text-decoration: none;
   color: gray;
 }
-.food .food__card {
+.food__card {
   background-color: white;
   border-radius: 20px;
-  margin-bottom: 10px;
-  box-shadow: 2px 5px 5px grey;
+  box-shadow: 7px 6px 11px #dcdcdc;
 }
-.food .food__img__cont {
+.food__card__cont {
   position: relative;
 }
-.food .food__pic {
+.food__card__cont__img {
   width: 100%;
   height: 160px;
   -o-object-fit: cover;
@@ -118,36 +213,78 @@ body {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.food .food__badge {
+.food__card__cont__badge {
   position: absolute;
   top: 10px;
   right: 10px;
+  padding: 10px;
+  background-color: #99E2D0;
+  box-shadow: 2px 5px 5px #dcdcdc;
 }
-.food .food__content {
-  display: flex;
-  justify-content: space-between;
+.food__card__content {
+  position: relative;
 }
-.food .food__content .food__title {
+.food__card__content__title {
   margin-top: 12px;
   margin-bottom: 0px;
   margin-left: 12px;
 }
-.food .food__content .food__heart {
-  max-width: 18px;
-  padding-right: 10px;
-  justify-content: end;
-}
-.food .food__para {
+.food__card__content__para {
   margin-left: 12px;
   margin-top: 6px;
-  padding-bottom: 16px;
+  padding-bottom: 12px;
+}
+.food__card__content .heart {
+  position: relative;
+  background-color: white;
+  border-radius: 0px 0px 20px 20px;
+  cursor: pointer;
+  bottom: 20px;
+}
+.food__card__content .heart::before {
+  display: inline-block;
+  font-size: 1.5rem;
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  right: 1rem;
+  bottom: 25px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 1;
+  transition: all 300ms ease-in-out;
+}
+.food__card__content .heart::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "\f004";
+  font-size: 1.5rem;
+  right: 1rem;
+  bottom: 25px;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  background-image: linear-gradient(to top, rgb(147, 86, 255), rgb(255, 121, 218));
+  transition: all 300ms ease-in-out;
+}
+.food__card__content .heart:hover::after {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .footer {
   background-color: gray;
-  padding-bottom: 1px;
+  padding-bottom: 2px;
+  font-family: "Roboto";
 }
-.footer .footer__title {
+.footer__title {
   font-family: "Shrikhand";
   color: white;
   padding-left: 20px;
@@ -155,16 +292,17 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.footer .footer__ul {
+.footer__ul {
   list-style-type: none;
   padding-left: 20px;
   margin-top: 12px;
 }
-.footer a {
+.footer li.footer__li a {
   text-decoration: none;
+  color: white;
 }
-.footer a:hover {
-  background-color: none;
+.footer li.footer__li a:hover {
+  background-color: gray;
 }
 .footer .footer__li {
   color: white;
@@ -173,4 +311,31 @@ body {
 .footer .footer__pic {
   width: 12px;
   padding-right: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  .presentation {
+    text-align: center;
+  }
+  .rule__ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .rule__ul a {
+    width: 30%;
+  }
+  .food__c {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+  }
+  .food__c .food__card {
+    min-width: 260px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .footer__ul {
+    display: flex;
+    justify-content: space-around;
+  }
 }/*# sourceMappingURL=projet3.css.map */
