@@ -7,7 +7,7 @@ $color-tertiary: #99E2D0;
         opacity: 1;
         transform: rotate(0deg);
     }
-    66%{
+    50%{
         opacity: 0.5;
     }
     100%{
@@ -18,7 +18,6 @@ $color-tertiary: #99E2D0;
 
 @keyframes opaci{
     0%{opacity: 0;}
-    66%{opacity: 0;}
     100%{opacity: 1;}
 }
 
@@ -73,7 +72,7 @@ h2{
         }
         &__city{
             font-family: 'Roboto';
-            font-weight: bold;
+            font-weight: 400;
             font-size: small;
         }
 }
@@ -93,7 +92,7 @@ h2{
             padding-right: 20px;
             color: white;
             font-size: small;
-            background-color: $color-primary;
+            background: linear-gradient(to top, rgb(150, 91, 250), rgb(255, 121, 218));
             box-shadow: 9px 6px 12px #dcdcdc;
             text-decoration: none;
         }
@@ -104,13 +103,10 @@ h2{
 }   
 .rule{
     font-family: 'Roboto';
-    padding-left: 20px;
-    padding-right: 10px;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    font-weight: bold;
+    padding: 20px;
         &__ul{
-            padding-left: 4px;
-            padding-right: 8px; 
+            padding: 0px;
         }
         a{
             text-decoration: none;
@@ -126,22 +122,21 @@ h2{
             margin-bottom: 20px;
             padding-top: 20px;
             padding-bottom: 20px;
-            font-weight: bold;
             position: relative;
             font-size: small;
             display: flex;
             align-items: center;
         } 
-        .rule__num{
+        &__num{
             max-width: 6px;
-            padding: 8px;
+            padding: 7px;
             position: absolute;
             top: 20px;
             left: -9px;
             border-radius: 50%;
             background-color: $color-primary;
         }
-        .rule__pic{
+        &__pic{
             max-width: 18px;
             padding-right: 20px;
             padding-left: 30px;
@@ -149,10 +144,7 @@ h2{
 }
 .food{
     background-color: #F5F5F5;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 30px;
-    padding-top: 20px;
+    padding: 20px;
     font-family: 'Roboto';
         a{
             text-decoration: none;
@@ -249,10 +241,10 @@ h2{
     background-color: gray;
     padding-bottom: 2px;
     font-family: 'Roboto';
+    color: white;
     
     &__title{
         font-family: 'Shrikhand';
-        color: white;
         padding-left: 20px;
         padding-top: 20px;
         margin-top: 0px;
@@ -272,7 +264,6 @@ h2{
         background-color: gray;
     }
     .footer__li{
-        color: white;
         padding-bottom: 6px;
     }
     .footer__pic{

@@ -3,7 +3,7 @@
     opacity: 1;
     transform: rotate(0deg);
   }
-  66% {
+  50% {
     opacity: 0.5;
   }
   100% {
@@ -16,7 +16,7 @@
     opacity: 1;
     transform: rotate(0deg);
   }
-  66% {
+  50% {
     opacity: 0.5;
   }
   100% {
@@ -28,18 +28,12 @@
   0% {
     opacity: 0;
   }
-  66% {
-    opacity: 0;
-  }
   100% {
     opacity: 1;
   }
 }
 @keyframes opaci {
   0% {
-    opacity: 0;
-  }
-  66% {
     opacity: 0;
   }
   100% {
@@ -106,7 +100,7 @@ h2 {
 }
 .location__city {
   font-family: "Roboto";
-  font-weight: bold;
+  font-weight: 400;
   font-size: small;
 }
 
@@ -127,7 +121,7 @@ h2 {
   padding-right: 20px;
   color: white;
   font-size: small;
-  background-color: #9356DC;
+  background: linear-gradient(to top, rgb(150, 91, 250), rgb(255, 121, 218));
   box-shadow: 9px 6px 12px #dcdcdc;
   text-decoration: none;
 }
@@ -138,14 +132,11 @@ h2 {
 
 .rule {
   font-family: "Roboto";
-  padding-left: 20px;
-  padding-right: 10px;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  font-weight: bold;
+  padding: 20px;
 }
 .rule__ul {
-  padding-left: 4px;
-  padding-right: 8px;
+  padding: 0px;
 }
 .rule a {
   text-decoration: none;
@@ -161,22 +152,21 @@ h2 {
   margin-bottom: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-weight: bold;
   position: relative;
   font-size: small;
   display: flex;
   align-items: center;
 }
-.rule .rule__num {
+.rule__num {
   max-width: 6px;
-  padding: 8px;
+  padding: 7px;
   position: absolute;
   top: 20px;
   left: -9px;
   border-radius: 50%;
   background-color: #9356DC;
 }
-.rule .rule__pic {
+.rule__pic {
   max-width: 18px;
   padding-right: 20px;
   padding-left: 30px;
@@ -184,10 +174,7 @@ h2 {
 
 .food {
   background-color: #F5F5F5;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 30px;
-  padding-top: 20px;
+  padding: 20px;
   font-family: "Roboto";
 }
 .food a {
@@ -283,10 +270,10 @@ h2 {
   background-color: gray;
   padding-bottom: 2px;
   font-family: "Roboto";
+  color: white;
 }
 .footer__title {
   font-family: "Shrikhand";
-  color: white;
   padding-left: 20px;
   padding-top: 20px;
   margin-top: 0px;
@@ -305,7 +292,6 @@ h2 {
   background-color: gray;
 }
 .footer .footer__li {
-  color: white;
   padding-bottom: 6px;
 }
 .footer .footer__pic {
@@ -338,4 +324,4 @@ h2 {
     display: flex;
     justify-content: space-around;
   }
-}/*# sourceMappingURL=projet3.css.map */
+}/*# sourceMappingURL=Ohmyfood.css.map */
