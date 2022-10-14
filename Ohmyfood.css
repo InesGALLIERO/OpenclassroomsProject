@@ -51,7 +51,7 @@ body {
 }
 .loader .loader__anim {
   border: 16px solid #9356DC;
-  border-top: 16px solid #FF79DA;
+  border-top: 16px solid #f5e8f1;
   border-bottom: 16px solid #99E2D0;
   border-radius: 50%;
   box-shadow: 7px 6px 11px #dcdcdc;
@@ -108,6 +108,8 @@ h2 {
   text-align: center;
   background-color: #F5F5F5;
   padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 50px;
   font-family: "Roboto";
 }
@@ -138,12 +140,8 @@ h2 {
 .rule__ul {
   padding: 0px;
 }
-.rule a {
-  text-decoration: none;
-  color: black;
-}
-.rule a :hover {
-  background-color: #FF79DA;
+.rule__ul .rule_num:hover {
+  background-color: black;
 }
 .rule__li {
   background-color: #F5F5F5;
@@ -156,6 +154,9 @@ h2 {
   font-size: small;
   display: flex;
   align-items: center;
+}
+.rule__li:hover {
+  background-color: #f5e8f1;
 }
 .rule__num {
   max-width: 6px;
@@ -307,7 +308,7 @@ h2 {
     display: flex;
     justify-content: space-between;
   }
-  .rule__ul a {
+  .rule__li {
     width: 30%;
   }
   .food__c {
@@ -320,8 +321,14 @@ h2 {
     margin-bottom: 30px;
     margin-top: 30px;
   }
+  .footer__title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
   .footer__ul {
     display: flex;
     justify-content: space-around;
+    padding-left: 0px;
   }
 }/*# sourceMappingURL=Ohmyfood.css.map */

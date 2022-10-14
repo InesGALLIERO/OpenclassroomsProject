@@ -31,7 +31,7 @@ body {
 }
 .header .header__pic {
   width: 14px;
-  bottom: 22px;
+  bottom: 24px;
   left: 20px;
   position: absolute;
 }
@@ -114,6 +114,7 @@ body {
 .menu .menu__food {
   margin-left: 10px;
   font-family: "Roboto";
+  color: black;
 }
 .menu .menu__food__title {
   margin-bottom: 5px;
@@ -124,11 +125,6 @@ body {
   width: 40px;
   margin-left: 1px;
   margin-top: 5px;
-}
-.menu .menu__food a {
-  text-decoration: none;
-  color: black;
-  width: 100%;
 }
 .menu .menu__food .delay_1 {
   -webkit-animation-name: progre_disp;
@@ -201,23 +197,30 @@ body {
   box-shadow: 8px 8px 10px 2px #dcdcdc;
   padding-left: 10px;
   max-height: 87px;
+  margin-right: 20px;
 }
-.menu .menu__food .menu__food__card__title {
+.menu .menu__food .menu__food__card .menu__food__card__cont {
+  width: 100%;
+}
+.menu .menu__food .menu__food__card .menu__food__card__cont:hover {
+  width: 70%;
+}
+.menu .menu__food .menu__food__card .menu__food__card__cont__title {
   margin-bottom: 0px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.menu .menu__food .menu__food__card .menu__food__card__descript {
+.menu .menu__food .menu__food__card .menu__food__card__cont__descript {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
-.menu .menu__food .menu__food__card .menu__food__card__descript__price {
-  padding-right: 10px;
+.menu .menu__food .menu__food__card .menu__food__card__cont__descript .menu__food__card__cont__descript__price {
+  padding-right: 20px;
   font-weight: bold;
 }
-.menu .menu__food .menu__food__card .menu__food__card__descript__para {
+.menu .menu__food .menu__food__card .menu__food__card__cont__descript .menu__food__card__cont__descript__para {
   margin-top: 8px;
   overflow: hidden;
   white-space: nowrap;
@@ -233,7 +236,7 @@ body {
   margin-right: -92px;
   max-height: 87px;
 }
-.menu .menu__food .menu__food__card:hover a {
+.menu .menu__food .menu__food__card:hover .checkpic {
   margin-right: 0px;
   transition-duration: 500ms;
   max-width: 70%;
@@ -241,14 +244,13 @@ body {
 .menu .menu__btn {
   justify-content: center;
   display: flex;
-  margin-top: 30px;
-  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 70px;
 }
 .menu .menu__btn .menu__btn__a {
   border-radius: 30px;
-  padding: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
   color: white;
   font-size: small;
   background: linear-gradient(to top, rgb(150, 91, 250), rgb(255, 121, 218));

@@ -1,5 +1,5 @@
 $color-primary: #9356DC;
-$color-secondary: #FF79DA;
+$color-secondary: #f5e8f1;
 $color-tertiary: #99E2D0;
 
 @keyframes rotat{
@@ -15,12 +15,10 @@ $color-tertiary: #99E2D0;
         transform: rotate(360deg); 
     }
 }
-
 @keyframes opaci{
     0%{opacity: 0;}
     100%{opacity: 1;}
 }
-
 body{
     margin: 0px;
 }
@@ -44,7 +42,6 @@ body{
         opacity: 0;
     }
 }
-
 .page{
    animation-name: opaci; 
    animation-duration: 10s;
@@ -64,7 +61,6 @@ h2{
     background-color: #EFEFEF;
     box-shadow: 0px 5px 6px #DCDCDC inset;
     font-family: 'Roboto';
- 
         &__pic{
             max-width: 12px;
             padding-right: 10px;
@@ -80,6 +76,8 @@ h2{
     text-align: center;
     background-color: #F5F5F5;
     padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 50px;
     font-family: 'Roboto';
         &__para{
@@ -105,137 +103,136 @@ h2{
     font-family: 'Roboto';
     font-weight: bold;
     padding: 20px;
-        &__ul{
-            padding: 0px;
+    &__ul{
+        padding: 0px;
+        .rule_num:hover{
+            background-color: black;
         }
-        a{
-            text-decoration: none;
-            color: black;
-        }
-        a :hover{
-            background-color: $color-secondary;
-        }
-        &__li{
-            background-color: #F5F5F5;
-            box-shadow: 8px 8px 10px 2px #dcdcdc;
-            border-radius: 20px;
-            margin-bottom: 20px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            position: relative;
-            font-size: small;
-            display: flex;
-            align-items: center;
-        } 
-        &__num{
-            max-width: 6px;
-            padding: 7px;
-            position: absolute;
-            top: 20px;
-            left: -9px;
-            border-radius: 50%;
-            background-color: $color-primary;
-        }
-        &__pic{
-            max-width: 18px;
-            padding-right: 20px;
-            padding-left: 30px;
-        }
+    }
+    &__li{ 
+        background-color: #F5F5F5;
+        box-shadow: 8px 8px 10px 2px #dcdcdc;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        font-size: small;
+        display: flex;
+        align-items: center;
+    }
+    &__li:hover{
+        background-color: $color-secondary;
+    }
+    &__num{
+        max-width: 6px;
+        padding: 7px;
+        position: absolute;
+        top: 20px;
+        left: -9px;
+        border-radius: 50%;
+        background-color: $color-primary;
+    }
+    &__pic{
+        max-width: 18px;
+        padding-right: 20px;
+        padding-left: 30px;
+    }
+    
+    
 }
 .food{
     background-color: #F5F5F5;
     padding: 20px;
     font-family: 'Roboto';
-        a{
-            text-decoration: none;
-            color: black;
-        }
-        a:hover{
-            color: gray;
-        }
-        &__card{
-            background-color: white;
-            border-radius: 20px;
-            box-shadow: 7px 6px 11px #dcdcdc;
-            &__cont{
-                position: relative;
-                &__img{
-                    width: 100%;
-                    height: 160px;
-                    object-fit: cover;
-                    border-top-left-radius: 20px;
-                    border-top-right-radius: 20px;
-                }
-                &__badge {
-                    position: absolute;
-                    top: 10px;
-                    right: 10px;
-                    padding: 10px;
-                    background-color: $color-tertiary;
-                    box-shadow: 2px 5px 5px #dcdcdc;
-                }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        color: gray;
+    }
+    &__card{
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 7px 6px 11px #dcdcdc;
+        &__cont{
+            position: relative;
+            &__img{
+                width: 100%;
+                height: 160px;
+                object-fit: cover;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
             }
-            &__content{
+            &__badge {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                padding: 10px;
+                background-color: $color-tertiary;
+                box-shadow: 2px 5px 5px #dcdcdc;
+            }
+        }
+        &__content{
+            position: relative;
+            &__title{
+                margin-top: 12px;
+                margin-bottom: 0px;
+                margin-left: 12px;
+            }
+            &__para{
+                margin-left: 12px;
+                margin-top: 6px;
+                padding-bottom: 12px;
+            }
+            .heart{
                 position: relative;
-                &__title{
-                    margin-top: 12px;
-                    margin-bottom: 0px;
-                    margin-left: 12px;
-                }
-                &__para{
-                    margin-left: 12px;
-                    margin-top: 6px;
-                    padding-bottom: 12px;
-                }
-                .heart{
-                    position: relative;
-                    background-color: white;  
-                    border-radius: 0px 0px 20px 20px;
-                    cursor: pointer;
-                    bottom: 20px;
+                background-color: white;  
+                border-radius: 0px 0px 20px 20px;
+                cursor: pointer;
+                bottom: 20px;
 
-                    &::before{
-                        display: inline-block;
-                        font-size: 1.5rem;
-                        position: absolute;
-                        font-family: "Font Awesome 5 Free";
-                        font-weight: 400;
-                        content: "\f004";
-                        right: 1rem;
-                        bottom: 25px;
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        opacity: 1;
-                        transition: all 300ms ease-in-out;
-                    }
-                    &::after{
-                        display: inline-block;
-                        font-style: normal;
-                        font-variant: normal;
-                        text-rendering: auto;
-                        position: absolute;
-                        font-family: "Font Awesome 5 Free";
-                        font-weight: 700;
-                        content: "\f004";
-                        font-size: 1.5rem;
-                        right: 1rem;
-                        bottom: 25px;
-                        color: transparent;
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        opacity: 0;
-                        background-image: linear-gradient(to top, rgb(147, 86, 255), rgb(255, 121, 218));
-                        transition: all 300ms ease-in-out;
-                    }
-                    &:hover::after{
-                        opacity: 1;
-                        transform: scale(1.1);
-                    }
+                &::before{
+                    display: inline-block;
+                    font-size: 1.5rem;
+                    position: absolute;
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 400;
+                    content: "\f004";
+                    right: 1rem;
+                    bottom: 25px;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    opacity: 1;
+                    transition: all 300ms ease-in-out;
                 }
-                
+                &::after{
+                    display: inline-block;
+                    font-style: normal;
+                    font-variant: normal;
+                    text-rendering: auto;
+                    position: absolute;
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 700;
+                    content: "\f004";
+                    font-size: 1.5rem;
+                    right: 1rem;
+                    bottom: 25px;
+                    color: transparent;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    opacity: 0;
+                    background-image: linear-gradient(to top, rgb(147, 86, 255), rgb(255, 121, 218));
+                    transition: all 300ms ease-in-out;
+                }
+                &:hover::after{
+                    opacity: 1;
+                    transform: scale(1.1);
+                }
             }
         }
-                  
+    }            
 }
 .footer{
     background-color: gray;
@@ -280,9 +277,9 @@ h2{
     .rule__ul{
         display: flex;
         justify-content: space-between; 
-        a{
-            width: 30%;
-        }
+    }
+    .rule__li{
+        width: 30%;
     }
     
     .food__c{
@@ -295,9 +292,15 @@ h2{
             margin-top: 30px;
         }
     }
+    .footer__title{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
     .footer__ul{
         display: flex;
         justify-content: space-around;
+        padding-left: 0px;
     } 
     
 }
