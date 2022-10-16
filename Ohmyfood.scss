@@ -1,5 +1,5 @@
 $color-primary: #9356DC;
-$color-secondary: #f5e8f1;
+$color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
 @keyframes rotat{
@@ -119,10 +119,8 @@ h2{
         align-items: center;
     }
     &__li:hover{
-        background-color: $color-secondary;
-        .fa-solid:hover{
-            color: $color-primary;
-        }
+        background-color: #f5e8f1;
+        
     }
     &__num{
         max-width: 6px;
@@ -137,6 +135,9 @@ h2{
         width: 20px;
         padding-left: 20px;
         padding-right: 10px; 
+    }
+    .fa-solid:hover{
+        color: $color-primary;
     }
 }
 .food{

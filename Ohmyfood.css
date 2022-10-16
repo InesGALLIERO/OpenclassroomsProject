@@ -51,7 +51,7 @@ body {
 }
 .loader .loader__anim {
   border: 16px solid #9356DC;
-  border-top: 16px solid #f5e8f1;
+  border-top: 16px solid #FF79DA;
   border-bottom: 16px solid #99E2D0;
   border-radius: 50%;
   box-shadow: 7px 6px 11px #dcdcdc;
@@ -155,9 +155,6 @@ h2 {
 .rule__li:hover {
   background-color: #f5e8f1;
 }
-.rule__li:hover .fa-solid:hover {
-  color: #9356DC;
-}
 .rule__num {
   max-width: 6px;
   padding: 7px;
@@ -171,6 +168,9 @@ h2 {
   width: 20px;
   padding-left: 20px;
   padding-right: 10px;
+}
+.rule .fa-solid:hover {
+  color: #9356DC;
 }
 
 .food {
