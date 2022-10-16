@@ -253,14 +253,13 @@ body {
   padding-right: 40px;
   color: white;
   font-size: small;
-  background: linear-gradient(to top, rgb(150, 91, 250), rgb(255, 121, 218));
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
   box-shadow: 9px 6px 12px #dcdcdc;
   text-decoration: none;
   font-family: "Roboto";
 }
 .menu .menu__btn a:hover {
-  background-color: #bb8ff0;
-  text-decoration: none;
+  background: linear-gradient(180deg, #FF79DA, rgba(146, 86, 220, 0.5137254902));
   box-shadow: 17px 7px 16px #dcdcdc;
 }
 
