@@ -306,6 +306,11 @@ body {
   .div .menu__food {
     width: 30%;
   }
+  .footer__title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
   .footer__ul {
     display: flex;
     justify-content: space-evenly;

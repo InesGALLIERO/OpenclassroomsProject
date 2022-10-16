@@ -206,7 +206,6 @@ body{
             }
             
             .checkpic{
-       
                 width: 40px;
                 padding: 26px;
                 border-top-right-radius: 20px;
@@ -214,8 +213,6 @@ body{
                 background-color: #99E2D0;
                 margin-right: -92px;
                 max-height: 87px;
-                
-                
             }
             &:hover .checkpic{
                 margin-right: 0px;
@@ -290,6 +287,11 @@ body{
         .menu__food{
             width: 30%;
         }
+    }
+    .footer__title{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
     }
     .footer__ul{
         display: flex;

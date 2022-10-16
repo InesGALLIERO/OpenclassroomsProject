@@ -140,9 +140,6 @@ h2 {
 .rule__ul {
   padding: 0px;
 }
-.rule__ul .rule_num:hover {
-  background-color: black;
-}
 .rule__li {
   background-color: #F5F5F5;
   box-shadow: 8px 8px 10px 2px #dcdcdc;
@@ -158,19 +155,22 @@ h2 {
 .rule__li:hover {
   background-color: #f5e8f1;
 }
+.rule__li:hover .fa-solid:hover {
+  color: #9356DC;
+}
 .rule__num {
   max-width: 6px;
   padding: 7px;
   position: absolute;
-  top: 20px;
   left: -9px;
   border-radius: 50%;
   background-color: #9356DC;
 }
-.rule__pic {
-  max-width: 18px;
-  padding-right: 20px;
-  padding-left: 30px;
+.rule .fa-solid {
+  color: gray;
+  width: 20px;
+  padding-left: 20px;
+  padding-right: 10px;
 }
 
 .food {
