@@ -201,7 +201,7 @@ body{
                     overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;
-                    padding-right: 10px;
+                    padding-right: 6px;
                 }
             }
             
@@ -217,8 +217,12 @@ body{
             &:hover .checkpic{
                 margin-right: 0px;
                 transition-duration: 500ms;
-                max-width: 70%;
-            }      
+            }  
+            &:hover .check360deg{
+                transform: rotate(360deg);
+                transition-duration: 500ms;
+                width: 36px;
+            }    
         }
     } 
     .menu__btn{
@@ -244,10 +248,10 @@ body{
     }
 }
 .footer{
-    background-color: gray;
-    padding-bottom: 3px;
+    background-color: black;
+    padding-bottom: 2px;
     
-    .footer__title{
+    &__title{
         font-family: 'Shrikhand';
         color: white;
         padding-left: 20px;
@@ -255,28 +259,28 @@ body{
         margin-top: 0px;
         margin-bottom: 0px;
     }
-        .footer__ul{
-            list-style-type: none;
-            padding-left: 20px;
-            margin-top: 12px;
-        } 
-            li.footer__li a{
-                text-decoration: none;
-                color: white;
-          
-            }  
-            li.footer__li a:hover{
-                background-color: gray;
-            }
-            .footer__li{
-                color: white;
-                padding-bottom: 6px;
-            }
-                .footer__pic{
-                    width: 12px;
-                    padding-right: 5px;
-                    
-                }
+    &__ul{
+        list-style-type: none;
+        padding-left: 20px;
+        margin-top: 12px;
+    } 
+    li.footer__li a{
+        text-decoration: none;
+        color: white;
+    }  
+    li.footer__li a:hover{
+        background-color: black;
+    }
+    .footer__li{
+        padding-bottom: 6px;
+        font-family: 'Roboto';
+        font-weight: bold;
+    }
+    .footer__pic{
+        width: 12px;
+        padding-right: 5px;
+        
+    }
 }
 @media screen and (min-width: 1024px){
     .div{

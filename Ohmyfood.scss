@@ -119,21 +119,26 @@ h2{
         align-items: center;
     }
     &__li:hover{
-        background-color: #f5e8f1;
+        background-color: #9256dc1a;;
         
     }
     &__num{
         max-width: 6px;
-        padding: 7px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 4px;
+        padding-top: 4px;
         position: absolute;
         left: -9px;
         border-radius: 50%;
         background-color: $color-primary;
+        color: white;
+        font-family: 'Roboto';
     }
    .fa-solid{
         color: gray;
         width: 20px;
-        padding-left: 20px;
+        padding-left: 30px;
         padding-right: 10px; 
     }
     .fa-solid:hover{
@@ -171,6 +176,9 @@ h2{
                 padding: 10px;
                 background-color: $color-tertiary;
                 box-shadow: 2px 5px 5px #dcdcdc;
+                border-radius: 5px;
+                color: gray;
+                font-family: 'Roboto';
             }
         }
         &__content{
@@ -234,13 +242,12 @@ h2{
     }            
 }
 .footer{
-    background-color: gray;
+    background-color: black;
     padding-bottom: 2px;
-    font-family: 'Roboto';
-    color: white;
     
     &__title{
         font-family: 'Shrikhand';
+        color: white;
         padding-left: 20px;
         padding-top: 20px;
         margin-top: 0px;
@@ -254,13 +261,13 @@ h2{
     li.footer__li a{
         text-decoration: none;
         color: white;
-    
     }  
     li.footer__li a:hover{
-        background-color: gray;
+        background-color: black;
     }
     .footer__li{
         padding-bottom: 6px;
+        font-family: 'Roboto';
     }
     .footer__pic{
         width: 12px;

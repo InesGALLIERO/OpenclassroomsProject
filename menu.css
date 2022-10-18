@@ -225,7 +225,7 @@ body {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  padding-right: 10px;
+  padding-right: 6px;
 }
 .menu .menu__food .menu__food__card .checkpic {
   width: 40px;
@@ -239,7 +239,11 @@ body {
 .menu .menu__food .menu__food__card:hover .checkpic {
   margin-right: 0px;
   transition-duration: 500ms;
-  max-width: 70%;
+}
+.menu .menu__food .menu__food__card:hover .check360deg {
+  transform: rotate(360deg);
+  transition-duration: 500ms;
+  width: 36px;
 }
 .menu .menu__btn {
   justify-content: center;
@@ -264,10 +268,10 @@ body {
 }
 
 .footer {
-  background-color: gray;
-  padding-bottom: 3px;
+  background-color: black;
+  padding-bottom: 2px;
 }
-.footer .footer__title {
+.footer__title {
   font-family: "Shrikhand";
   color: white;
   padding-left: 20px;
@@ -275,7 +279,7 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.footer .footer__ul {
+.footer__ul {
   list-style-type: none;
   padding-left: 20px;
   margin-top: 12px;
@@ -285,11 +289,12 @@ body {
   color: white;
 }
 .footer li.footer__li a:hover {
-  background-color: gray;
+  background-color: black;
 }
 .footer .footer__li {
-  color: white;
   padding-bottom: 6px;
+  font-family: "Roboto";
+  font-weight: bold;
 }
 .footer .footer__pic {
   width: 12px;
