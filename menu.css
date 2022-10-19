@@ -44,10 +44,12 @@ body {
 
 .first-pic {
   margin: 0px;
-  max-height: 50%;
+  max-height: 30%;
   width: 100%;
   position: absolute;
   top: 55px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .menu {
@@ -198,6 +200,7 @@ body {
   padding-left: 10px;
   max-height: 87px;
   margin-right: 20px;
+  width: 100%;
 }
 .menu .menu__food .menu__food__card .menu__food__card__cont {
   width: 100%;
