@@ -155,6 +155,9 @@ h2 {
 .rule__li:hover {
   background-color: rgba(146, 86, 220, 0.1019607843);
 }
+.rule__li:hover .fa-solid {
+  color: #9356DC;
+}
 .rule__num {
   max-width: 6px;
   padding-left: 8px;
@@ -173,9 +176,6 @@ h2 {
   width: 20px;
   padding-left: 30px;
   padding-right: 10px;
-}
-.rule .fa-solid:hover {
-  color: #9356DC;
 }
 
 .food {
@@ -207,14 +207,15 @@ h2 {
   border-top-right-radius: 20px;
 }
 .food__card__cont__badge {
+  font-family: "Roboto";
+  font-weight: 500;
   position: absolute;
   top: 10px;
   right: 10px;
-  padding: 10px;
+  padding: 6px 10px;
   background-color: #99E2D0;
-  border-radius: 5px;
-  color: gray;
-  font-family: "Roboto";
+  border-radius: 2px;
+  color: #1fa785;
 }
 .food__card__content {
   position: relative;
@@ -275,7 +276,7 @@ h2 {
 }
 
 .footer {
-  background-color: black;
+  background-color: #303030;
   padding-bottom: 2px;
 }
 .footer__title {

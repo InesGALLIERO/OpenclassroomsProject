@@ -98,7 +98,7 @@ body{
         }
     }
     .menu__food{
-        margin-left: 10px;
+        margin: 0px 10px;
         font-family: 'Roboto';
         color: black;
         
@@ -171,16 +171,17 @@ body{
             margin-top: 14px;
             border-radius: 20px;
             box-shadow: 8px 8px 10px 2px #dcdcdc;
-            padding-left: 10px;
             max-height: 87px;
             margin-right: 20px;
             width: 100%;
 
+            
             .menu__food__card__cont{
+                padding-left: 10px;
                 width: 100%;
             }
             .menu__food__card__cont:hover{
-                width: 70%;
+                // width: 70%;
             }
             .menu__food__card__cont__title{
                 margin-bottom: 0px;
@@ -216,15 +217,24 @@ body{
                 margin-right: -92px;
                 max-height: 87px;
             }
-            &:hover .checkpic{
-                margin-right: 0px;
-                transition-duration: 500ms;
+            &:hover {
+
+                .checkpic {
+                    margin-right: 0px;
+                    transition-duration: 500ms;
+                }
+
+                .check360deg{
+                    transform: rotate(360deg);
+                    transition-duration: 500ms;
+                    width: 36px;
+                }
+
+                .menu__food__card__cont {
+                    width: calc(100% - 88px);
+                    transition-duration: 500ms;
+                }
             }  
-            &:hover .check360deg{
-                transform: rotate(360deg);
-                transition-duration: 500ms;
-                width: 36px;
-            }    
         }
     } 
     .menu__btn{

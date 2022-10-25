@@ -103,9 +103,10 @@ h2{
     font-family: 'Roboto';
     font-weight: bold;
     padding: 20px;
+
     &__ul{
         padding: 0px;
-        }
+    }
     &__li{ 
         background-color: #F5F5F5;
         box-shadow: 8px 8px 10px 2px #dcdcdc;
@@ -118,10 +119,15 @@ h2{
         display: flex;
         align-items: center;
     }
-    &__li:hover{
-        background-color: #9256dc1a;;
-        
+
+    &__li:hover {
+        background-color: #9256dc1a;
+
+        .fa-solid {
+            color: $color-primary;
+        }
     }
+
     &__num{
         max-width: 6px;
         padding-left: 8px;
@@ -140,9 +146,6 @@ h2{
         width: 20px;
         padding-left: 30px;
         padding-right: 10px; 
-    }
-    .fa-solid:hover{
-        color: $color-primary;
     }
 }
 .food{
@@ -170,14 +173,15 @@ h2{
                 border-top-right-radius: 20px;
             }
             &__badge {
+                font-family: 'Roboto';
+                font-weight: 500;
                 position: absolute;
                 top: 10px;
                 right: 10px;
-                padding: 10px;
+                padding: 6px 10px;
                 background-color: $color-tertiary;
-                border-radius: 5px;
-                color: gray;
-                font-family: 'Roboto';
+                border-radius: 2px;
+                color: #1fa785;
             }
         }
         &__content{
@@ -241,7 +245,7 @@ h2{
     }            
 }
 .footer{
-    background-color: black;
+    background-color: #303030;
     padding-bottom: 2px;
     
     &__title{
