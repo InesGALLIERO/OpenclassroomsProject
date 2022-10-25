@@ -228,8 +228,7 @@ body {
   padding-right: 6px;
 }
 .menu .menu__food .menu__food__card .checkpic {
-  width: 40px;
-  padding: 26px;
+  padding: 20px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: #99E2D0;
@@ -272,7 +271,7 @@ body {
 }
 
 .footer {
-  background-color: black;
+  background-color: #303030;
   padding-bottom: 2px;
 }
 .footer__title {
@@ -293,7 +292,7 @@ body {
   color: white;
 }
 .footer li.footer__li a:hover {
-  background-color: black;
+  background-color: #303030;
 }
 .footer .footer__li {
   padding-bottom: 6px;

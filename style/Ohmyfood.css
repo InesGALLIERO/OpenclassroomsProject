@@ -297,7 +297,7 @@ h2 {
   color: white;
 }
 .footer li.footer__li a:hover {
-  background-color: black;
+  background-color: #303030;
 }
 .footer .footer__li {
   padding-bottom: 6px;
