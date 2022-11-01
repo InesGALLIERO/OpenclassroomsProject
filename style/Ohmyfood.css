@@ -59,8 +59,8 @@ body {
   height: 120px;
   -webkit-animation-name: rotat;
           animation-name: rotat;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   position: absolute;
